@@ -1,4 +1,4 @@
-const socket = io('http://localhost:3000');
+const socket = io('https://secondesb-formulaire.onrender.com');
 
 let isModalOpen = false; 
 
@@ -34,7 +34,7 @@ function handleFormSubmit(event) {
 
         socket.emit('user_disconnect'); 
         document.getElementById('preloader').style.display = 'flex';
-        fetch('http://localhost:3000/feedbacks', {
+        fetch('https://secondesb-formulaire.onrender.com/feedbacks', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
