@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion Admin</title>
+    <link rel="stylesheet" href="admin-login.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Connexion Admin</h1>
+        <form id="loginForm">
+            <div class="input-container">
+                <span class="material-icons">lock</span>
+                <input type="password" id="password" name="password" placeholder="Entrez le mot de passe" required>
+            </div>
+            <button type="submit">
+                <span class="material-icons">login</span> Se connecter
+            </button>
+            <p id="errorMessage" class="error-message"></p>
+        </form>
+    </div>
+    <script src="admin-login.js"></script>
+</body>
+</html>

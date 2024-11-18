@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Seconde Sb - Réponse</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+</head>
+<body>
+
+    <!-- Préloader avec animation plus longue -->
+    <div id="preloader" class="preloader" style="display: flex;">
+        <div class="loader"></div>
+    </div>
+
+    <div class="response-container">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
+        
+        <div class="message-container">
+            <h1>Merci pour votre soumission !</h1>
+            <p class="message">
+                Le projet sera terminé d'ici dimanche. Nous vous remercions de votre confiance.
+            </p>
+        </div>
+
+        <div class="button-container">
+            <a href="index.html">
+                <button class="return-button">
+                    <i class="fas fa-arrow-left"></i> Retour au formulaire
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Simulation de préchargement plus long (augmenter la durée du préloader)
+        setTimeout(() => {
+            document.getElementById('preloader').style.display = 'none';
+        }, 3000); // La durée est de 3 secondes
+    </script>
+
+</body>
+</html>

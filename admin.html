@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Voir les Feedbacks</title>
+    <link rel="stylesheet" href="admin.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+</head>
+<body>
+
+    <div class="admin-container">
+        <header>
+            <h1>Gestion des Feedbacks</h1>
+            <div class="header-actions">
+                <button id="resetButton" class="reset-button">
+                    <span class="material-icons">refresh</span> Réinitialiser
+                </button>
+                <button id="logoutButton" class="logout-button">
+                    <span class="material-icons">exit_to_app</span> Déconnexion
+                </button>
+            </div>
+        </header>
+
+        <section class="feedbacks-section">
+            <h2>Feedbacks des élèves</h2>
+            <div id="feedbackStatus" class="status-message">Chargement...</div>
+            <table id="feedbackTable" class="feedback-table">
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Avis</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
