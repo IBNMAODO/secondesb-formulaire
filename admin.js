@@ -1,4 +1,4 @@
-const socket = io('http://localhost:3000');
+const socket = io('https://secondesb-formulaire.onrender.com');
 
 window.onload = function() {
     if (!localStorage.getItem('isAdminAuthenticated')) {
@@ -50,7 +50,7 @@ window.onload = function() {
 };
 
 function updateAdminTable() {
-    fetch('http://localhost:3000/feedbacks')
+    fetch('https://secondesb-formulaire.onrender.com/feedbacks')
         .then(response => response.json())
         .then(feedbacks => {
             const feedbackTable = document.getElementById('feedbackTable').getElementsByTagName('tbody')[0];
