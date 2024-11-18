@@ -31,7 +31,7 @@ window.onload = function() {
 
     document.getElementById('resetButton').addEventListener('click', function() {
         if (confirm("Êtes-vous sûr de vouloir réinitialiser toutes les données ?")) {
-            fetch('http://localhost:3000/feedbacks', { method: 'DELETE' })
+            fetch('https://secondesb-formulaire.onrender.com/feedbacks', { method: 'DELETE' })
                 .then(response => response.json())
                 .then(data => {
                     alert(data.message);
